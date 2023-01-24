@@ -1,5 +1,5 @@
 import json
-from datac import *
+from bkapi.datac import *
 def parse_grade(grade):
     if "-" in grade:
         return float(grade.split("-")[0])+0.5
@@ -21,4 +21,3 @@ def parse_subject(text):
         return subject(s,date,hour,teacher,room,group,theme)
     else:
         return None
-    

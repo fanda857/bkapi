@@ -1,7 +1,7 @@
 import httpx
 from selectolax.parser import HTMLParser
-from utils import *
-from datac import *
+from bkapi.utils import *
+from bkapi.datac import *
 
 class bkapp:
     def __init__(self, username, password,url):
