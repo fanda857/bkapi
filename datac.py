@@ -11,12 +11,8 @@ class grade:
 class subject:
     name : str
     date : str
+    hour : str
     teacher : str
     room : str
     group : str
     theme : str
-    
-
-            
-
-    

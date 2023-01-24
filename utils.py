@@ -13,12 +13,12 @@ def parse_subject(text):
     js = json.loads(text)
     t = js["type"]
     if t == "atom":
-        s,date = js["subjecttext"].split(" | ")[:-1]
+        s,date,hour = js["subjecttext"].split(" | ")
         teacher = js["teacher"]
         room = js["room"]
         group = js["group"] if js["group"] != "" else None
         theme = js["theme"] if js["theme"] != "" else None
-        return subject(s,date,teacher,room,group,theme)
+        return subject(s,date,hour,teacher,room,group,theme)
     else:
         return None
     

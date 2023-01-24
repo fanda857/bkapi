@@ -26,7 +26,7 @@ class bkapp:
             for g,w in zip(grades,weights):
                 if names[i] not in out.keys():
                     out[names[i]] = []
-                out[names[i]].append(grade(g.text(), int(w.text())))
+                out[names[i]].append(grade(parse_grade(g.text()), int(w.text())))
         return out
     def get_schedule(self):
         out = []
